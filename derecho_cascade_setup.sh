@@ -33,6 +33,7 @@ sudo apt install libboost-all-dev
 #    regal
 sudo apt install build-essential cmake libgl1-mesa-dev libglu1-mesa-dev
 sudo apt install libboost-all-dev ragel python3.10 python3-pip -y
+cd scripts/prerequisites
 sudo ./install-hyperscan.sh
 sudo ./install-libwsong.sh
 sudo ./install-rpclib.sh
