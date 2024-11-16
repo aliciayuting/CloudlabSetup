@@ -40,7 +40,7 @@ sudo ./install-rpclib.sh
 sudo apt install libreadline-dev
 
 # spdlog build
-cd ../../
+cd ../../../
 git clone --branch v1.12.0 https://github.com/gabime/spdlog.git
 cd spdlog
 mkdir -p build && cd build
