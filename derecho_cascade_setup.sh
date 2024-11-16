@@ -19,11 +19,12 @@ sudo apt update
 sudo apt install libspdlog-dev
 sudo apt install libssl-dev
 # Set over commit for derecho to run
+# Run this again after rebook
 sudo sysctl -w vm.overcommit_memory=1
 # ... Skipped steps to build and install derecho
 
 # Clone cascade and install 
-cd ..
+cd ../../../
 git clone https://github.com/Derecho-Project/cascade.git
 cd cascade
 # required for hyper-scan
