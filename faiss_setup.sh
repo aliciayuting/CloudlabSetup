@@ -60,7 +60,7 @@ if [[ "$response" == "y" ]]; then
     echo "Installing FAISS Python interface..."
     make -j swigfaiss
     cd faiss/python
-    python setup.py install --user
+    sudo python setup.py install
     cd ../../..
 fi
 
