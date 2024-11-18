@@ -2,11 +2,10 @@
 
 # This line should be set in env variables
 export PATH=/usr/lib/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 
 git clone https://github.com/facebookresearch/faiss.git
 cd faiss
-git checkout v1.9.0
+#git checkout v1.9.0
 build_path="build"
 if [ -z $FAISS_INSTALL_PREFIX ]; then
     install_prefix="/usr/local"
@@ -16,7 +15,7 @@ fi
 echo "FAISS library will be installed in $install_prefix"
 
 if [ -z $CUDAToolKitRoot ]; then
-    cudatoolkit_dir="/usr/lib/x86_64-linux-gnu"
+    cudatoolkit_dir="/usr/lib/cuda-12.4"
 else
     cudatoolkit_dir=$CUDAToolKitRoot
 fi
@@ -55,6 +54,7 @@ if [ $NPROC -lt 2 ]; then
     NPROC=2
 fi
 make faiss -j `expr $NPROC - 1` 2>err.log
+exit 1
 make install
 
 if [[ "$response" == "y" ]]; then
