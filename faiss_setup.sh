@@ -54,7 +54,6 @@ if [ $NPROC -lt 2 ]; then
     NPROC=2
 fi
 make faiss -j `expr $NPROC - 1` 2>err.log
-exit 1
 make install
 
 if [[ "$response" == "y" ]]; then
