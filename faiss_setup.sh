@@ -40,7 +40,8 @@ cuda_archs="80"
 # More about the flags setting checkout https://github.com/facebookresearch/faiss/blob/main/INSTALL.md
 cmake_defs="-DCMAKE_BUILD_TYPE=${build_type} \
           -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=${install_prefix} \
-          -DFAISS_ENABLE_GPU=ON -DFAISS_ENABLE_PYTHON=${enable_python} -DFAISS_ENABLE_RAFT=OFF \
+	  -DCMAKE_CXX_STANDARD=20\
+	  -DFAISS_ENABLE_GPU=ON -DFAISS_ENABLE_PYTHON=${enable_python} -DFAISS_ENABLE_RAFT=OFF \
           -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DFAISS_ENABLE_C_API=ON \
           -DCUDAToolkit_ROOT=${cudatoolkit_dir} -DCMAKE_CUDA_ARCHITECTURES=${cuda_archs}"
 
