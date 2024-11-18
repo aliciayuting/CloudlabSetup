@@ -15,7 +15,7 @@ fi
 echo "FAISS library will be installed in $install_prefix"
 
 if [ -z $CUDAToolKitRoot ]; then
-    cudatoolkit_dir="/usr/lib/cuda-12.4"
+    cudatoolkit_dir="/usr/local/cuda-12.4"
 else
     cudatoolkit_dir=$CUDAToolKitRoot
 fi
