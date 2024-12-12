@@ -1,6 +1,7 @@
 # Install CMake
-sudo apt update
-sudo apt install cmake
+# Use the script in the doc to install cmake with specific version
+# sudo apt update
+# sudo apt install cmake
 
 # Clone derecho and install dependencies
 cd ~
