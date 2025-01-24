@@ -2,7 +2,7 @@
 
 # Move this setup script to workspace
 # Then Install dependencies Blas
-# Remember to run below commands before running this script
+# Remember to install NVidia driver and toolkit and run below commands before running this script
 sudo apt update
 sudo apt install libblas-dev
 sudo apt install liblapack-dev
