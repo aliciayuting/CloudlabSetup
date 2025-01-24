@@ -1,5 +1,4 @@
 lpci | grep -i nvidia
-sudo apt install nvidia-utils-550
 
 sudo apt remove --purge '^nvidia-.*'
 sudo apt autoremove
@@ -16,6 +15,8 @@ sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/
 sudo apt update
 
 apt-cache policy nvidia-driver-550
+
+sudo apt install nvidia-utils-550
 
 sudo reboot
 
