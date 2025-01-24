@@ -46,7 +46,7 @@ make install
 
 
 # Clone cascade and install 
-cd ../../../
+cd ~/workspace
 git clone https://github.com/Derecho-Project/cascade.git
 cd cascade
 # required for hyper-scan
