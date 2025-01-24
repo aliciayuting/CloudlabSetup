@@ -9,7 +9,7 @@ mkdir workspace
 cd workspace
 git clone https://github.com/Derecho-Project/derecho.git
 cd derecho
-git checkout 2e625af0475bb48e57b60031a13244d85f8330b8
+# git checkout 2e625af0475bb48e57b60031a13244d85f8330b8 # this step checkout a particular version, now is not needed
 cd scripts/prerequisites
 sudo ./install-json.sh
 sudo ./install-libfabric.sh
