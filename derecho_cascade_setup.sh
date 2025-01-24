@@ -18,7 +18,7 @@ sudo ./install-mutils.sh
 sudo ./install-mutils-containers.sh
 # install more derecho dependencies: spdlog,ssl
 sudo apt update
-# sudo apt install libspdlog-dev
+# sudo apt install libspdlog-dev DONOT use this way to install spdlog, version incorrect, use below method
 # Install spdlog:
 cd ~/workspace
 git clone --branch v1.12.0 https://github.com/gabime/spdlog.git
