@@ -16,7 +16,7 @@ sudo apt update
 
 apt-cache policy nvidia-driver-550
 
-sudo apt install nvidia-utils-550
+# sudo apt install nvidia-utils-550  Not needed because nvidia-driver should contain utils
 
 sudo reboot
 
