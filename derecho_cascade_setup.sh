@@ -37,6 +37,13 @@ cd ~/workspace/derecho
 # Before running below line
 # Please edit ~/CloudlabSetup/install_env.sh and set the opt-home to your user directory (your username on cloudlab) on cloudlab
 source ~/CloudlabSetup/env_temp.sh
+# above should set the derecho install location to your own user space, you can test it via below line, make sure it isn't /usr/local, but /home/USERNAME/opt-dev
+echo "$DERECHO_INSTALL_PREFIX"
+./build.sh Release
+cd build-Release
+make -j32
+make install
+
 
 # Clone cascade and install 
 cd ../../../
