@@ -3,10 +3,10 @@
 # Move this setup script to workspace
 # Then Install dependencies Blas
 # Remember to run below commands before running this script
-# sudo apt update
-# sudo apt install libblas-dev
-# sudo apt install liblapack-dev
-# sudo apt install python3-dev python3-numpy
+sudo apt update
+sudo apt install libblas-dev
+sudo apt install liblapack-dev
+sudo apt install python3-dev python3-numpy
 
 # This line should be set in env variables
 export PATH=/usr/lib/cuda/bin:$PATH
