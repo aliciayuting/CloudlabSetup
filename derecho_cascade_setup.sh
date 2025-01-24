@@ -27,6 +27,8 @@ mkdir -p build && cd build
 cmake .. -DCMAKE_CXX_FLAGS="-fPIC" -DCMAKE_BUILD_TYPE=Release
 make -j32
 sudo make install
+# verify installation
+#ls /usr/local/lib/libspdlog.a
 
 sudo apt install libssl-dev
 # Set over commit for derecho to run
@@ -61,15 +63,9 @@ sudo ./install-libwsong.sh
 sudo ./install-rpclib.sh
 sudo apt install libreadline-dev
 
-# spdlog build
-cd ../../../
-git clone --branch v1.12.0 https://github.com/gabime/spdlog.git
-cd spdlog
-mkdir -p build && cd build
-cmake .. -DCMAKE_CXX_FLAGS="-fPIC" -DCMAKE_BUILD_TYPE=Release
-make -j32
-sudo make install
-# verify installation
-#ls /usr/local/lib/libspdlog.a
+# build cascade
+cd ~/workspace/cascade
+
+
 
 
