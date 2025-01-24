@@ -65,7 +65,12 @@ sudo apt install libreadline-dev
 
 # build cascade
 cd ~/workspace/cascade
-
+# env script used when installing derecho should also set the cascade install location to your own user space, you can test it via below line, make sure it isn't /usr/local, but /home/USERNAME/opt-dev
+echo "$CASCADE_INSTALL_PREFIX"
+./build.sh Release
+cd build-Release
+make -j32
+make install
 
 
 
