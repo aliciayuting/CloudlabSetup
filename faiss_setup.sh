@@ -11,6 +11,7 @@ sudo apt install python3-dev python3-numpy -y
 # This line should be set in env variables
 export PATH=/usr/lib/cuda/bin:$PATH
 
+cd ~/workspace
 git clone https://github.com/facebookresearch/faiss.git
 cd faiss
 #git checkout v1.9.0
