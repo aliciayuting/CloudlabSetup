@@ -32,7 +32,11 @@ sudo apt install libssl-dev
 # Set over commit for derecho to run
 # Run this again after rebook
 sudo sysctl -w vm.overcommit_memory=1
-# ... Skipped steps to build and install derecho
+#  build and install derecho
+cd ~/workspace/derecho
+# Before running below line
+# Please edit ~/CloudlabSetup/env_temp.sh and set the opt-home to your directory on cloudlab
+source ~/CloudlabSetup/env_temp.sh
 
 # Clone cascade and install 
 cd ../../../
