@@ -35,7 +35,7 @@ sudo sysctl -w vm.overcommit_memory=1
 #  build and install derecho
 cd ~/workspace/derecho
 # Before running below line
-# Please edit ~/CloudlabSetup/env_temp.sh and set the opt-home to your directory on cloudlab
+# Please edit ~/CloudlabSetup/install_env.sh and set the opt-home to your user directory (your username on cloudlab) on cloudlab
 source ~/CloudlabSetup/env_temp.sh
 
 # Clone cascade and install 
