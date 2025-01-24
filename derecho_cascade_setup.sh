@@ -1,7 +1,7 @@
 # Install CMake
 # Use the script in the doc to install cmake with specific version
 # sudo apt update
-# sudo apt install cmake
+# install cmake # Please DO NOT use (pip install) to install Cmake, because Derecho and Cascade has dependencies on CMake 3.31, use the script in the doc to install from source code
 
 # Clone derecho and install dependencies
 cd ~
