@@ -62,8 +62,8 @@ NPROC=`nproc`
 if [ $NPROC -lt 2 ]; then
     NPROC=2
 fi
-make faiss -j `expr $NPROC - 1` 2>err.log
-make install
+sudo make faiss -j `expr $NPROC - 1` 2>err.log
+sudo make install
 
 if [[ "$response" == "y" ]]; then
     echo "Installing FAISS Python interface..."
