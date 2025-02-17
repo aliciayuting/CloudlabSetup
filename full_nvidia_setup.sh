@@ -1,5 +1,3 @@
-#!/bin/bash
-
 lpci | grep -i nvidia
 
 sudo apt remove --purge '^nvidia-.*'
@@ -21,8 +19,21 @@ apt-cache policy nvidia-driver-550
 sudo apt install nvidia-driver-550
 # sudo apt install nvidia-utils-550  # this should not be needed after install driver above
 
-# sudo reboot
-echo "Finished installing NVIDIA driver."
-echo "Run 'sudo reboot' to apply changes."
 
+sudo reboot
+
+sudo apt-get --purge remove "*cuda*"
+
+sudo apt-get autoremove
+
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-4
+
+export PATH=/usr/local/cuda/bin:$PATH
+
+# check via
+nvcc --version
 
