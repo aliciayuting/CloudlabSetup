@@ -6,7 +6,7 @@ echo "Run mkdir opt-dev at ./~ before running this script"
 if [ -z "$1" ]; then
     echo "your USER_HOME directory not provided. Please provide it as the first argument."
     echo "you can run this script as $./cloudlab_env_setup.sh /users/[yournetid] or $./cloudlab_env_setup.sh ~"
-    exit 1
+    return 1
 fi
 
 # Set OPT_HOME to the first argument
