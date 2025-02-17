@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "This script requires /users/[yournetid]/opt-dev folder"
-echo "Run '\$ mkdir opt-dev' at ./~ before running this script"
 
 # Check if the OPT_HOME argument is provided
 if [ -z "$1" ]; then
@@ -12,6 +10,15 @@ fi
 # Set OPT_HOME to the first argument
 USER_HOME=$(echo "$1" | sed 's:/*$::')
 OPT_HOME=${USER_HOME}/opt-dev
+
+# Create opt-dev directory if it does not exist
+if [ ! -d "$OPT_HOME" ]; then
+    echo "Creating $OPT_HOME directory..."
+    mkdir -p "$OPT_HOME"
+    echo "Directory created: $OPT_HOME"
+else
+    echo "$OPT_HOME already exists. Skipping creation."
+fi
 
 # OPT_HOME=/users/[YOUR-CLOUDLAB-USER-NAME]/opt-dev
 echo " .. setting up derecho cascade vortex installation env variables"
