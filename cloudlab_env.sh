@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "This script requires /users/[yournetid]/opt-dev ./~/opt-dev folder to set environment variable correctly"
-echo "Run mkdir opt-dev at ./~ before running this script"
+echo "This script requires /users/[yournetid]/opt-dev folder"
+echo "Run '\$ mkdir opt-dev' at ./~ before running this script"
 
 # Check if the OPT_HOME argument is provided
 if [ -z "$1" ]; then
