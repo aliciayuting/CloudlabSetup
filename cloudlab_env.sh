@@ -40,4 +40,5 @@ export LD_LIBRARY_PATH=${OPT_HOME}/lib:/usr/local/lib:${LD_LIBRARY_PATH}
 
 echo " .. setting up cuda path"
 export PATH=/usr/local/cuda/bin:$PATH
+export PATH=$PATH:${OPT_HOME}/bin
 echo "Finished setup the env path"

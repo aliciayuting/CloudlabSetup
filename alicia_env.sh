@@ -12,4 +12,4 @@ export CPLUS_INCLUDE_PATH=${OPT_HOME}/include:/usr/local/include:${CPLUS_INCLUDE
 export LIBRARY_PATH=${OPT_HOME}/lib:/usr/local/lib:${LIBRARY_PATH}
 export LD_LIBRARY_PATH=${OPT_HOME}/lib:/usr/local/lib:${LD_LIBRARY_PATH}
 export PATH=/usr/local/cuda/bin:$PATH
-
+export PATH=$PATH:${OPT_HOME}/bin
