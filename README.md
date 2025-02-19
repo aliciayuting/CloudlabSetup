@@ -26,3 +26,15 @@ faiss_setup.sh
 
 set_overcommit.sh
 ```
+
+# Setup env
+
+to use the env you can call
+```
+./cloudlab_env.sh ~
+```
+
+To use tmux with config
+```
+./set_tmux.sh
+```
