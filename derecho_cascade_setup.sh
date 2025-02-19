@@ -74,7 +74,7 @@ echo "$CASCADE_INSTALL_PREFIX"
 ./build.sh Release
 cd build-Release
 make -j32
-make install
+sudo make install
 cd src/service/python/dist
 sudo pip install derecho.cascade-1.0.2-py3-none-any.whl
 
