@@ -29,7 +29,7 @@ set_overcommit.sh
 2. Model installation
 
 ```
-sudo pip install -r requirements.txt
+pipeline_models.sh
 ```
 
 Some models use huggingface support, need to login to huggingface to run them
