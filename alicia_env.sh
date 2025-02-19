@@ -1,6 +1,6 @@
 OPT_HOME=/users/Alicia/opt-dev
-export DERECHO_INSTALL_PREFIX=${OPT_HOME}/
-export CASCADE_INSTALL_PREFIX=${OPT_HOME}/
+export DERECHO_INSTALL_PREFIX=/usr/local
+export CASCADE_INSTALL_PREFIX=/usr/local
 export FAISS_INSTALL_PREFIX=/usr/local
 export VORTEX_INSTALL_PREFIX=${OPT_HOME}/
 export CURL_INSTALL_PREFIX=/usr/local
