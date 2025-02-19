@@ -29,7 +29,7 @@ faiss_setup.sh
 set_overcommit.sh
 ```
 
-# Setup env
+# Environment variables and programming shortcuts
 
 to use the env you can call
 ```
