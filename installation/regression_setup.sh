@@ -3,4 +3,4 @@ sudo apt update
 sudo apt install psmisc
 
 #install via requirements
-pip install -r requirements.txt
+sudo pip install -r requirements.txt

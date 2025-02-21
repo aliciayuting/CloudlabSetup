@@ -64,13 +64,19 @@ sudo ./install-rpclib.sh
 sudo apt install libreadline-dev -y
 
 # build cascade
+# install cascade python requirements
+sudo pip install pybind11
+sudo pip install build
+sudo apt install python3.10-venv
+
 cd ~/workspace/cascade
 # env script used when installing derecho should also set the cascade install location to your own user space, you can test it via below line, make sure it isn't /usr/local, but /home/USERNAME/opt-dev
 echo "$CASCADE_INSTALL_PREFIX"
 ./build.sh Release
 cd build-Release
 make -j32
-make install
-
+sudo make install
+cd src/service/python/dist
+sudo pip install derecho.cascade-1.0.2-py3-none-any.whl
 
 
