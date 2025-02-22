@@ -48,7 +48,6 @@ if [ ! -d "/mydata/.huggingface_cache" ]; then
     sudo mkdir "/mydata/.huggingface_cache"
     echo "Folder created for huggingface cache."
 fi
-sudo chown -R $USER:$USER /mydata/.huggingface_cache
-chmod -R 777 /mydata/.huggingface_cache
+sudo chmod -R u+rwx /mydata/.huggingface_cache
 export HF_HOME=/mydata/.huggingface_cache
 echo "set HF_HOME to /mydata/.huggingface_cache"
