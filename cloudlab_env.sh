@@ -48,6 +48,9 @@ if [ ! -d "/mydata/.huggingface_cache" ]; then
     sudo mkdir "/mydata/.huggingface_cache"
     echo "Folder created for huggingface cache."
 fi
-sudo chmod -R u+rwx /mydata/.huggingface_cache
 export HF_HOME=/mydata/.huggingface_cache
 echo "set HF_HOME to /mydata/.huggingface_cache"
+
+# Note need to change the group name when changing clusters. Check by $groups command
+sudo chown -R $USER:cascadefuse-PG0 /mydata/.huggingface_cache
+echo "added {$USER}:cascadefuse-PG0 to /mydata/.huggingface_cache"
