@@ -44,9 +44,11 @@ export PATH=$PATH:${OPT_HOME}/bin
 echo "Finished setup the env path"
 
 
-#if [ ! -d "/mydata/.huggingface_cache" ]; then
-#    sudo mkdir "/mydata/.huggingface_cache"
-#    echo "Folder created for huggingface cache."
-#fi
-#export HF_HOME=/mydata/.huggingface_cache
-#echo "set HF_HOME to /mydata/.huggingface_cache"
+if [ ! -d "/mydata/.huggingface_cache" ]; then
+    sudo mkdir "/mydata/.huggingface_cache"
+    echo "Folder created for huggingface cache."
+fi
+sudo chown -R $USER:$USER /mydata/.huggingface_cache
+chmod -R 777 /mydata/.huggingface_cache
+export HF_HOME=/mydata/.huggingface_cache
+echo "set HF_HOME to /mydata/.huggingface_cache"
