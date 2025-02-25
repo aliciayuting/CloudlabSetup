@@ -44,7 +44,7 @@ echo "$DERECHO_INSTALL_PREFIX"
 ./build.sh Release
 cd build-Release
 make -j32
-make install
+sudo make install
 
 
 # Clone cascade and install 
