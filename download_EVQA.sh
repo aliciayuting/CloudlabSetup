@@ -18,10 +18,8 @@ sudo mkdir inat && sudo unzip inat.zip -d inat/
 echo "Finished image root"
 
 sudo mkdir index
-sudo tar -xvzf EVQA_test_split.tar.gz
-sudo tar -xvzf EVQA_train_split.tar.gz
-sudo mv EVQA_test_split/ index/
-sudo mv EVQA_train_split/ index/
+sudo tar -xvzf EVQA_test_split.tar.gz -C index/
+sudo tar -xvzf EVQA_train_split.tar.gz -C index/
 sudo rm EVQA_test_split.tar.gz EVQA_train_split.tar.gz
 echo "Finished index root"
 
