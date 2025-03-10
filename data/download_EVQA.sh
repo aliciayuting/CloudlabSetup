@@ -41,3 +41,4 @@ sudo unzip -j models_pipeline1.zip -d models
 sudo rm models_pipeline1.zip 
 echo "Finished model ckpts"
 
+sudo rm -rf __MACOSX
