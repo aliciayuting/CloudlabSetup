@@ -10,9 +10,9 @@ sudo wget https://vortexstorage7348269.blob.core.windows.net/flmrdata/EVQA_test_
 sudo wget https://vortexstorage7348269.blob.core.windows.net/flmrdata/EVQA_train_split.tar.gz
 
 sudo unzip EVQA_data.zip
-rm -rf EVQA_data.zip
+sudo rm -rf EVQA_data.zip
 sudo unzip EVQA_passages.zip
-rm -rf EVQA_passages.zip
+sudo rm -rf EVQA_passages.zip
 
 echo "Finished EVQA data setup"
 
@@ -24,6 +24,8 @@ sudo mkdir google-landmark
 sudo tar -xvf google-landmark.tar -C google-landmark
 sudo mkdir inat 
 sudo unzip inat.zip -d inat/
+sudo rm -rf google-landmark.tar
+sudo rm -rf inat.zip
 echo "Finished image data installation"
 
 
