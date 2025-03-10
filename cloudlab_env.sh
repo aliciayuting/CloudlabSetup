@@ -27,7 +27,7 @@ export CASCADE_INSTALL_PREFIX=${OPT_HOME}/
 export FAISS_INSTALL_PREFIX=${OPT_HOME}/
 export VORTEX_INSTALL_PREFIX=${OPT_HOME}/
 export CURL_INSTALL_PREFIX=${OPT_HOME}/
-export CURL_INSTALL_PREFIX=${OPT_HOME}/
+export HNSWLIB_INSTALL_PREFIX=${OPT_HOME}/
 
 echo " .. setting up cmake cpp include path env variables"
 export CMAKE_PREFIX_PATH=${OPT_HOME}:/usr/local:${CMAKE_PREFIX_PATH}
