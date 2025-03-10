@@ -13,8 +13,10 @@ sudo wget https://huggingface.co/datasets/BByrneLab/M2KR_Images/resolve/main/EVQ
 sudo wget https://huggingface.co/datasets/BByrneLab/M2KR_Images/resolve/main/EVQA/inat.zip
 echo "Finished wget"
 
-sudo mkdir google-landmark && sudo tar -xvf google-landmark.tar -C google-landmark
-sudo mkdir inat && sudo unzip inat.zip -d inat/
+sudo mkdir google-landmark 
+sudo tar -xvf google-landmark.tar -C google-landmark
+sudo mkdir inat 
+sudo unzip inat.zip -d inat/
 echo "Finished image root"
 
 sudo mkdir index
@@ -26,7 +28,10 @@ echo "Finished index root"
 
 sudo unzip EVQA_data.zip
 sudo unzip EVQA_passages.zip
-sudo mkdir models && sudo unzip models_pipeline1.zip -d models
-sudo mv models/models_pipeline1/*pt models/ && sudo rm models_pipeline1.zip && sudo rm -rf models/models_pipeline1/
+sudo mkdir models 
+sudo unzip models_pipeline1.zip -d models
+sudo mv models/models_pipeline1/*pt models/
+sudo rm models_pipeline1.zip 
+sudo rm -rf models/models_pipeline1/
 echo "Finished Datasets and model ckpts"
 
