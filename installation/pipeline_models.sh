@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CURR_DIR=$(pwd)
+
 sudo pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 sudo pip install -r requirements.txt
@@ -28,3 +30,9 @@ sudo pip install -e .
 
 echo "finished flmr installation"
 
+# Return to the original directory
+cd "$CURR_DIR"
+
+# Run the Python script
+python prepare_flmr.py
+echo "finished flmr initialization"
