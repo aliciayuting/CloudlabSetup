@@ -22,7 +22,10 @@ fi
 export HF_HOME=/mydata/.huggingface_cache
 echo "set HF_HOME to /mydata/.huggingface_cache"
 
-# Note need to change the group name when changing clusters. Check by $groups command
-sudo chown -R $USER:cascadefuse-PG0 /mydata/.huggingface_cache
-echo "added {$USER}:cascadefuse-PG0 to /mydata/.huggingface_cache"
+# Retrieve the primary group dynamically
+MYGROUP=$(id -gn)
+
+# Change ownership using the dynamically obtained group name
+sudo chown -R $USER:$MYGROUP /mydata/.huggingface_cache
+echo "added ${USER}:${MYGROUP} to /mydata/.huggingface_cache"
 
