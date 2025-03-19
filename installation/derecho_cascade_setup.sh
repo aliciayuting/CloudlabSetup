@@ -77,6 +77,6 @@ cd build-Release
 make -j32
 sudo make install
 cd src/service/python/dist
-sudo pip install derecho.cascade-1.0.2-py3-none-any.whl
+sudo pip install derecho_cascade-1.0.2-py3-none-any.whl
 
 
