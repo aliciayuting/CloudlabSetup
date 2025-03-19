@@ -51,6 +51,13 @@ sudo make install
 cd ~/workspace
 git clone https://github.com/Derecho-Project/cascade.git
 cd cascade
+
+read -p "Use cascade put_nparray branch? (y/n): " response
+response=${response,,}
+if [[ "$response" == "y" ]]; then
+    git checkout put_nparray
+fi
+
 # required for hyper-scan
 #    boost
 sudo apt install libboost-all-dev
