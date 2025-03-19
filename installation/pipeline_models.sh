@@ -34,5 +34,5 @@ echo "finished flmr installation"
 cd "$CURR_DIR"
 
 # Run the Python script
-python prepare_flmr.py
+python prepare_FLMR.py
 echo "finished flmr initialization"
