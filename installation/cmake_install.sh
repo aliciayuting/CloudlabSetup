@@ -10,5 +10,7 @@ cd cmake-3.31.0
 make -j32
 sudo make install
 
-cd CURR_DIR
 
+
+# Return to the original directory
+cd "$CURR_DIR"
