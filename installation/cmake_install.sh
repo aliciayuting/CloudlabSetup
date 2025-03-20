@@ -1,5 +1,5 @@
 # install ssl
-
+CURR_DIR=$(pwd)
 sudo apt update
 sudo apt install libssl-dev
 
@@ -10,5 +10,5 @@ cd cmake-3.31.0
 make -j32
 sudo make install
 
-
+cd CURR_DIR
 
