@@ -77,3 +77,5 @@ echo "FAISS installed successfully."
 # clean up
 rm -rf faiss
 
+# Return to the original directory
+cd "$CURR_DIR"
