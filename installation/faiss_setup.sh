@@ -1,5 +1,5 @@
 #!/bin/bash
-
+CURR_DIR=$(pwd)
 # Move this setup script to workspace
 # Then Install dependencies Blas
 # Remember to install NVidia driver and toolkit and run below commands before running this script
