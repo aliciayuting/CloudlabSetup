@@ -36,3 +36,5 @@ cd "$CURR_DIR"
 # Run the Python script
 python prepare_FLMR.py
 echo "finished flmr initialization"
+
+git clone https://github.com/aliciayuting/SenseVoice.git
