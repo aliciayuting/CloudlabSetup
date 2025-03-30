@@ -22,5 +22,5 @@ tqdm==4.66.4
 soundfile==0.12.1
 sentencepiece==0.1.97
 funasr==1.2.6
-
+kaldi_native_fbank==1.21.1
 
