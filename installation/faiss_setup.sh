@@ -3,6 +3,7 @@
 sudo pip uninstall faiss-cpu
 sudo pip uninstall faiss-gpu
 sudo pip uninstall faiss
+sudo rm -rf ~/workspace/faiss
 
 CURR_DIR=$(pwd)
 # Move this setup script to workspace
