@@ -1,4 +1,9 @@
 #!/bin/bash
+
+sudo pip uninstall faiss-cpu
+sudo pip uninstall faiss-gpu
+sudo pip uninstall faiss
+
 CURR_DIR=$(pwd)
 # Move this setup script to workspace
 # Then Install dependencies Blas
