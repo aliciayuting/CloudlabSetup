@@ -21,6 +21,8 @@ nvidia_toolkit_setup.sh
 
 alicia_env.sh (Set up environment, since rebooted just now)
 
+# install model before install faiss, due to dependency conflicts between nemo and faiss
+
 faiss_setup.sh
 
 set_overcommit.sh
