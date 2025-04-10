@@ -53,8 +53,8 @@ cmake_defs="-DCMAKE_BUILD_TYPE=${build_type} \
           -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DFAISS_ENABLE_C_API=ON \
           -DCUDAToolkit_ROOT=${cudatoolkit_dir} -DCMAKE_CUDA_ARCHITECTURES=${cuda_archs}"
 
-rm -rf ${install_prefix}/include/faiss ${install_prefix}/lib/libfaiss* ${install_prefix}/lib/cmake/faiss
-rm -rf ${build_path} 2>/dev/null
+sudo rm -rf ${install_prefix}/include/faiss ${install_prefix}/lib/libfaiss* ${install_prefix}/lib/cmake/faiss
+sudo rm -rf ${build_path} 2>/dev/null
 mkdir ${build_path}
 cd ${build_path}
 cmake ${cmake_defs} ..
