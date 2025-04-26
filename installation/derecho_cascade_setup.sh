@@ -24,7 +24,7 @@ cd ~/workspace
 git clone --branch v1.12.0 https://github.com/gabime/spdlog.git
 cd spdlog
 mkdir -p build && cd build
-cmake .. -DCMAKE_CXX_FLAGS="-fPIC" -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_CXX_FLAGS="-fPIC" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${SPDLOG_PREFIX}
 make -j32
 sudo make install
 # verify installation
