@@ -23,6 +23,7 @@ fi
 # OPT_HOME=/users/[YOUR-CLOUDLAB-USER-NAME]/opt-dev
 echo " .. setting up derecho cascade vortex installation env variables"
 export DERECHO_INSTALL_PREFIX=${OPT_HOME}/
+export DEPENDENCIES_PREFIX=${OPT_HOME}/
 export CASCADE_INSTALL_PREFIX=${OPT_HOME}/
 export FAISS_INSTALL_PREFIX=${OPT_HOME}/
 export VORTEX_INSTALL_PREFIX=${OPT_HOME}/
