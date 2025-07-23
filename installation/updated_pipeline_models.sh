@@ -4,17 +4,17 @@ PYTHON=python3
 CURR_DIR=$(pwd)
 
 echo "Upgrading pip..."
-#sudo -H $PYTHON -m pip install --upgrade pip setuptools wheel
+sudo -H $PYTHON -m pip install --upgrade pip setuptools wheel
 
 echo "Installing PyTorch with CUDA 11.8..."
-#sudo -H $PYTHON -m pip install --ignore-installed \
-#    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+sudo -H $PYTHON -m pip install --ignore-installed \
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 echo "Installing NeMo Toolkit..."
-#sudo -H $PYTHON -m pip install --ignore-installed "nemo_toolkit[all]"
+sudo -H $PYTHON -m pip install --ignore-installed "nemo_toolkit[all]"
 
 echo "Installing all dependencies from requirements_updated.txt..."
-#sudo -H $PYTHON -m pip install --ignore-installed -r requirements.txt
+sudo -H $PYTHON -m pip install --ignore-installed -r requirements.txt
 
 echo "finished pip installation"
 
