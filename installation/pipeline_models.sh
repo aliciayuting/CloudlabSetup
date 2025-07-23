@@ -1,6 +1,9 @@
 #!/bin/bash
 
+sudo -H python3 -m pip install --upgrade pip setuptools wheel
+
 CURR_DIR=$(pwd)
+
 
 sudo pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
