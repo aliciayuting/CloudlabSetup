@@ -14,7 +14,7 @@ gitpython==3.1.44
 easydict==1.13
 ninja==1.11.1
 datasets==3.2.0
-transformers==4.48.2
+transformers==4.35.2
 
 
 #pipeline2 dependencies
