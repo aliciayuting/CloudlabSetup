@@ -2,7 +2,7 @@
 
 cd /mydata/
 
-sudo mv ~/evqa.zip ./
+sudo mv ~/evqa.zip /mydata/
 
 sudo unzip evqa.zip
 
