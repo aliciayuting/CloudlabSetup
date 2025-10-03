@@ -31,7 +31,7 @@ git clone https://github.com/tcyuan373/FLMR.git
 cd FLMR
 sudo pip install -e . 
 
-sudo pip install colbert
+sudo pip install colbert-ai
 
 echo "finished flmr installation"
 
