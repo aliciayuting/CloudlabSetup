@@ -15,6 +15,7 @@ easydict==1.13
 ninja==1.11.1
 datasets==3.2.0
 transformers==4.35.2
+easydict==1.13
 
 
 #pipeline2 dependencies
