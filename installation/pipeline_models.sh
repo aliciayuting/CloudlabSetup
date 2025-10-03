@@ -31,8 +31,7 @@ git clone https://github.com/tcyuan373/FLMR.git
 cd FLMR
 sudo pip install -e . 
 
-cd third_party/ColBERT
-sudo pip install -e .
+sudo pip install colbert
 
 echo "finished flmr installation"
 
