@@ -45,5 +45,5 @@ huggingface-cli login
 
 for pipeline2.
 
-Install sensevoice's dependencies from its requirements.txt,  and ```pip install kaldi-native-fbank```
+Install sensevoice's dependencies from its requirements.txt,  and ```pip install kaldi-native-fbank```, transformer version different from pipeline1 >=4.43 <4.46
 
