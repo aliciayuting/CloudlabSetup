@@ -43,4 +43,7 @@ Some models use huggingface support, need to login to huggingface to run them
 huggingface-cli login
 ```
 
+for pipeline2.
+
+Install sensevoice's dependencies from its requirements.txt,  and ```pip install kaldi-native-fbank```
 
