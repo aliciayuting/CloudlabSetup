@@ -45,7 +45,7 @@ echo " .. setting up cuda path"
 export PATH=/usr/local/cuda/bin:$PATH
 export PATH=$PATH:${OPT_HOME}/bin
 echo "Finished setup the env path"
-
+export TORCHDYNAMO_DISABLE=1
 
 if [ ! -d "/mydata/.huggingface_cache" ]; then
     sudo mkdir "/mydata/.huggingface_cache"
