@@ -35,7 +35,8 @@ vortex_setup.sh
 ```
 pipeline_models.sh
 ```
-If run into error of utility package not found, then removed the source installed colbert, but install colbert from pip (``` pip install colbert-ai```)
+If run into error of utility package not found, make sure to install colbert and flmr from the customized source code (```pip install -e .```), and export PYTHONPATH=/users/Alicia/workspace/FLMR:$PYTHONPATH
+
 
 Some models use huggingface support, need to login to huggingface to run them
 
