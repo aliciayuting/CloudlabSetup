@@ -61,3 +61,6 @@ MYGROUP=$(id -gn)
 sudo chown -R $USER:$MYGROUP /mydata/.huggingface_cache
 echo "added ${USER}:${MYGROUP} to /mydata/.huggingface_cache"
 
+
+echo "run this script again after install FLMR"
+export PYTHONPATH=~/workspace/FLMR:$PYTHONPATH
