@@ -49,3 +49,4 @@ for pipeline2.
 Install sensevoice's dependencies from its requirements.txt,  and ```pip install kaldi-native-fbank```, transformer version different from pipeline1 transformers==4.44.2, FlagEmbedding==1.3.4, ```pip install "nemo_toolkit[all]"```
 
 ``` pip install einops webdataset datasets ipython lightning jiwer lhotse wandb pyannote-core pyannote-metrics nltk```
+```pip install faiss-gpu-cu12```
